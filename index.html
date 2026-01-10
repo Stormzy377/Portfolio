@@ -1,158 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Dev Junior</title>
+    <title>eugermanoDev | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
     <div class="gradient-bg"></div>
     <canvas id="snowCanvas"></canvas>
 
     <header>
         <nav>
-            <div class="logo">eugermanoDev</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">Germano Mualevangue</div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="assets/CV_Germano.pdf" class="btn-cv" target="_blank">Ver Currículo</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="avatar-container">
-                <img src="assets/icon.png" alt="avatar" class="avatar">
+        <section class="construction-hero">
+            <div class="svg-container">
+                <img src="assets/engineers-team-discussing-issues-construction-site.png" alt="Homens em construção" class="float-svg">
             </div>
-            <h1>Programador Júnior<span class="gradient-text"> Sobre mim</span></h1>
-            <p>Comecei transformando curiosidade em código. Hoje desenvolvo interfaces modernas com HTML, CSS, JavaScript, React e React Native, sempre buscando evoluir e criar experiências que conectam pessoas e tecnologia.</p>
-            <div class="cta-buttons">
-                <button class="btn-primary">Contactar</button>
-                <button class="btn-secondary">Baixar CV</button>
-            </div>
+            <h1>Portfolio currently under construction.</h1>
+            <p>I'm working on something amazing. In the meantime, check out my main projects below.</p>
         </section>
 
-<section class="tech-stack">
-    <p>EXPERIÊNCIA COM</p>
-    <div class="stack-list">
-        <span>C</span>
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JS</span>
-        <span>React</span>
-        <span>React Native</span>
-        <span>Node JS</span>
-        <span>Python</span>
-    </div>
-</section>
-
-        <section id="projects" class="projects">
-            <h2>PROJECTS</h2>
+        <section id="projects" class="projects-mini">
             <div class="project-grid">
                 <div class="project-card">
-                    <div class="card-image html-bg">
-                        <span>E-COMMERCE FAST-FOOD</span>
+                    <div class="card-preview html-bg">
+                        <!-- <img src="assets/burger.png" alt="ecommerce fastfood"> -->
+                         <h2>FastFood E-commerce</h2>
                     </div>
-                    <div class="card-footer">
-                        <p>LIVE DEMO</p>
-                        <span class="arrow">↗</span>
+                    <div class="card-info">
+                        <h3>FastFood E-commerce</h3>
+                        <p>Um sistema completo de e-commerce para restaurantes fastfood.</p>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="card-image css-bg">
-                        <span>CHAT EM TEMPO REAL</span>
+                    <div class="card-preview css-bg">
+                        <!-- <img src="assets/todo.png" alt="todo app"> -->
+                         <h2>To-Do App</h2>
                     </div>
-                    <div class="card-footer">
-                        <p>LIVE DEMO</p>
-                        <span class="arrow">↗</span>
+                    <div class="card-info">
+                        <h3>To-Do App</h3>
+                        <p>Uma aplicação de lista de tarefas simples e eficiente.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-preview css-bg">
+                        <!-- <img src="assets/todo.png" alt="todo app"> -->
+                         <h2>Chat em tempo real</h2>
+                    </div>
+                    <div class="card-info">
+                        <h3>Chat em tempo real</h3>
+                        <p>Uma aplicação de chat em tempo real para comunicação instantânea.</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="experience" class="experience">
-    <h2 class="section-title">JORNADA & EVOLUÇÃO</h2>
-
-    <div class="exp-item">
-        <div class="exp-header">
-            <h3>Programador Independente</h3>
-            <span>2023 - Present</span>
-        </div>
-        <p>
-            Focado na arquitetura e desenvolvimento de soluções <strong>SaaS escaláveis</strong>. 
-            Durante este período, construí ecossistemas completos utilizando AWS, Node.js e React, 
-            aplicando padrões de design de software para resolver problemas reais de usuários de forma independente.
-        </p>
-    </div>
-
-    <div class="exp-item">
-        <div class="exp-header">
-            <h3>Tech Content Creator & Educator</h3>
-            <span>2019 - 2021</span>
-        </div>
-        <p>
-            Dediquei-me a traduzir conceitos complexos de engenharia de software em conteúdo acessível. 
-            Desenvolvi tutoriais de <strong>HTML/CSS Avançado</strong> e lógica de programação, 
-            ajudando a fortalecer a comunidade tech e consolidando meu domínio sobre as tecnologias web.
-        </p>
-    </div>
-
-    <div class="exp-item">
-        <div class="exp-header">
-            <h3>Open Source Contributor / Lab Days</h3>
-            <span>2017 - 2019</span>
-        </div>
-        <p>
-            Fase de imersão profunda em algoritmos e estruturas de dados. 
-            Contribuí para repositórios no GitHub e desenvolvi uma série de 
-            <strong>micro-serviços experimentais</strong>, focando em performance e 
-            clean code, o que formou a base da minha senioridade técnica atual.
-        </p>
-    </div>
-</section>
-
-<footer id="contact" class="footer-container">
-    <div class="footer-content">
-        <h2>Contact</h2>
-        <p class="footer-bio">
-            Cada projeto é uma nova oportunidade de aprender, crescer e gerar impacto real.
-        </p>
-
-        <a href="mailto:germanomualevangue@gmail.com" class="email-link">
-            <span class="email-icon">📧</span>
-            germanomualevangue@gmail.com
-        </a>
-
-        <div class="social-links">
-            <a href="#" target="_blank" class="social-item" title="TikTok">
-                <i class="fab fa-tiktok"></i>
-                <span>TikTok</span>
-            </a>
-            <a href="#" target="_blank" class="social-item" title="Instagram">
-                <i class="fab fa-instagram"></i>
-                <span>Instagram</span>
-            </a>
-            <a href="#" target="_blank" class="social-item" title="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-                <span>LinkedIn</span>
-            </a>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Germano Mualevangue. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </main>
-    
-     <script src="main.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
