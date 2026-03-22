@@ -1,74 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eugermanoDev | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <div class="gradient-bg"></div>
-    <canvas id="snowCanvas"></canvas>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Germano Mualevangue | Dev</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="mediaqueries/media.css">
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">Germano Mualevangue</div>
-            <ul class="nav-links">
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="assets/CV_Germano.pdf" class="btn-cv" target="_blank">Ver Currículo</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">Germano Mualevangue</div>
+        <a href="assets/CV_Germano.pdf" class="btn-cv" target="_blank">
+          ↓ Ver Currículo
+        </a>
+      </nav>
     </header>
 
     <main>
-        <section class="construction-hero">
-            <div class="svg-container">
-                <img src="assets/engineers-team-discussing-issues-construction-site.png" alt="Homens em construção" class="float-svg">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <h1 class="fade-up">
+            O dev que está<br />sempre <span>aprendendo.</span>
+          </h1>
+          <p class="fade-up">
+            Olá! Sou o Germano, desenvolvedor full-stack Angolano em ascensão.
+            Construo interfaces modernas e sistemas robustos com foco em
+            performance e experiência do utilizador.
+          </p>
+          <div class="hero-actions fade-up">
+            <a href="/pages/projects.html" class="btn-primary">Ver Projetos →</a>
+            <a href="#about" class="btn-outline">Sobre mim</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card accent fade-up">
+            <div>
+              <div class="card-label">Disponível para trabalho</div>
+              <div class="card-sub">Open to freelance & full-time</div>
             </div>
-            <h1>Portfolio currently under construction.</h1>
-            <p>I'm working on something amazing. In the meantime, check out my main projects below.</p>
-        </section>
-
-        <section id="projects" class="projects-mini">
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="card-preview html-bg">
-                        <!-- <img src="assets/burger.png" alt="ecommerce fastfood"> -->
-                         <h2>FastFood E-commerce</h2>
-                    </div>
-                    <div class="card-info">
-                        <h3>FastFood E-commerce</h3>
-                        <p>Um sistema completo de e-commerce para restaurantes fastfood.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-preview css-bg">
-                        <!-- <img src="assets/todo.png" alt="todo app"> -->
-                         <h2>To-Do App</h2>
-                    </div>
-                    <div class="card-info">
-                        <h3>To-Do App</h3>
-                        <p>Uma aplicação de lista de tarefas simples e eficiente.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-preview css-bg">
-                        <!-- <img src="assets/todo.png" alt="todo app"> -->
-                         <h2>Chat em tempo real</h2>
-                    </div>
-                    <div class="card-info">
-                        <h3>Chat em tempo real</h3>
-                        <p>Uma aplicação de chat em tempo real para comunicação instantânea.</p>
-                    </div>
-                </div>
+            <div class="card-icon">✓</div>
+          </div>
+          <div class="hero-card fade-up">
+            <div>
+              <div class="card-label">Full-Stack Developer</div>
+              <div class="card-sub">Frontend + Backend + Mobile</div>
             </div>
-        </section>
+            <div class="card-icon"><i class="fas fa-bolt"></i></div>
+          </div>
+          <div class="hero-card fade-up">
+            <div>
+              <div class="card-label">Vivendo em Angola 🇦🇴</div>
+              <div class="card-sub">Trabalho remoto worldwide</div>
+            </div>
+            <div class="card-icon"><i class="fas fa-location-dot"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="section-wrapper">
+          <div class="section-header">
+            <h2>Sobre mim</h2>
+            <span class="version">Who I am</span>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card wide fade-up">
+              <div class="label">Introdução</div>
+              <h3>Olá, eu sou Germano</h3>
+              <p>
+                Sou um desenvolvedor apaixonado por criar produtos digitais que
+                fazem a diferença. Comecei a programar por curiosidade e hoje
+                transformo ideias em realidade através do código. Tenho
+                experiência em desenvolvimento web, mobile e backend — do design
+                da interface à arquitetura do servidor.
+              </p>
+            </div>
+
+            <div class="about-card coral fade-up">
+              <div class="label" style="opacity: 0.7">Foco atual</div>
+              <div class="stat-big">1+</div>
+              <h3>Anos de Experiência</h3>
+              <p>Construindo projetos reais e aprendendo constantemente.</p>
+            </div>
+
+            <div class="about-card yellow fade-up">
+              <div class="label">Mindset</div>
+              <div class="stat-big"><i class="fas fa-infinity"></i></div>
+              <h3>Sempre a aprender</h3>
+              <p>
+                A tecnologia evolui rápido e eu gosto de acompanhar essa
+                evolução.
+              </p>
+            </div>
+
+            <div class="about-card fade-up">
+              <div class="label">Localização</div>
+              <h3>🇦🇴 Angola, Luanda</h3>
+              <p>
+                Trabalhando localmente e remotamente com clientes e equipas
+                internacionais. Comunicação clara e entrega no prazo são a minha
+                marca.
+              </p>
+            </div>
+
+            <div class="about-card fade-up">
+              <div class="label">Projetos</div>
+              <h3><i class="fas fa-rocket"></i> De 0 a Produção</h3>
+              <p>
+                Já desenvolvi e lancei e-commerce, sistemas de chat em tempo
+                real, apps de produtividade e muito mais. Cada projeto é uma
+                nova aventura.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STACKS -->
+      <section id="stacks">
+        <div class="section-wrapper">
+          <div class="section-header">
+            <h2>Stack & Ferramentas</h2>
+            <span class="version">What I use</span>
+          </div>
+
+          <div class="stacks-grid">
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>HTML & CSS
+            </div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>JavaScript
+            </div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>TypeScript
+            </div>
+            <div class="stack-pill fade-up"><span class="dot"></span>React</div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>Node.js
+            </div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>Express
+            </div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>PostgreSQL
+            </div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>Git & GitHub
+            </div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>Socket.io
+            </div>
+            <div class="stack-pill fade-up">
+              <span class="dot"></span>Python
+            </div>
+          </div>
+
+          <div class="stack-cta">
+            <a href="/pages/projects.html" class="btn-primary"
+              >Ver todos os Projetos →</a
+            >
+            <a href="assets/CV_Germano.pdf" class="btn-outline" target="_blank"
+              >↓ Download CV</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script src="script.js"></script>
-</body>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">Germano Mualevangue</div>
+        <div class="footer-links">
+          <a href="https://github.com/Stormzy377" class="footer-link" target="_blank"
+            >GitHub ↗</a
+          >
+          <a href="https://www.linkedin.com/in/germanos-sorte/" class="footer-link" target="_blank"
+            >LinkedIn ↗</a
+          >
+          <a href="mailto:germanosorte9@email.com" class="footer-link">Email ↗</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
